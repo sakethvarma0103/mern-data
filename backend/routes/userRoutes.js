@@ -3,6 +3,7 @@ import mongoose from "mongoose";
 import User from "../models/userModel.js";
 const app=express();
 const router=express.Router();
+app.use(express.json());
 
 router.get("/",(req,res)=>
 {
